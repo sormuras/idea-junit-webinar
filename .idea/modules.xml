@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/IDEA-JUnit-Webinar.iml" filepath="$PROJECT_DIR$/.idea/IDEA-JUnit-Webinar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/test.base.iml" filepath="$PROJECT_DIR$/.idea/test.base.iml" />
     </modules>
   </component>
 </project>
