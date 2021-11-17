@@ -2,6 +2,7 @@
 
 - 📼 Webinar <https://info.jetbrains.com/info.jetbrains.com/idea-webinar-november17-2021>
 - 📜 Sources <https://github.com/sormuras/idea-junit-webinar>
+- ▶ IDEA <https://www.jetbrains.com/idea>
 - ☕ Java 17 <https://oracle.com/javadownload>
 - ✅ JUnit 5 <https://junit.org/junit5>
 
