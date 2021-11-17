@@ -1,16 +1,14 @@
 # IntelliJ IDEA and JUnit: Writing, Finding, and Running Tests
 
-- 🤓 <https://sormuras.github.io>
-- 📼 <https://info.jetbrains.com/info.jetbrains.com/idea-webinar-november17-2021>
-- ☕ <https://github.com/sormuras/idea-junit-webinar>
-- ✅ <https://junit.org/junit5>
+- 📼 Webinar <https://info.jetbrains.com/info.jetbrains.com/idea-webinar-november17-2021>
+- 📜 Sources <https://github.com/sormuras/idea-junit-webinar>
+- ☕ Java 17 <https://oracle.com/javadownload>
+- ✅ JUnit 5 <https://junit.org/junit5>
 
 > _JUnit 5_ is the next generation of JUnit.
 > The goal is to create an up-to-date foundation
 > for developer-side testing [...]
 > enabling many different styles of testing.
-
-Taken from <https://junit.org/junit5>
 
 ## Example Programs
 
@@ -39,3 +37,5 @@ More styles, more engines, more fun.
 ___
 
 Happy testing!
+
+Christian <https://sormuras.github.io>
