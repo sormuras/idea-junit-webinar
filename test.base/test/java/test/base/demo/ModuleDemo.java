@@ -2,7 +2,7 @@ package test.base.demo;
 
 public class ModuleDemo {
   public static void main(String[] args) {
-    var expected = "test.bas90e";
+    var expected = "test.base";
     var actual = ModuleDemo.class.getModule().getName();
 
     if (expected.equals(actual)) {
