@@ -6,4 +6,5 @@ open /*test*/ module test.base {
   requires org.junit.jupiter;
   requires com.github.sormuras.mainrunner.engine;
   requires org.assertj.core;
+  requires net.jqwik.api;
 }
