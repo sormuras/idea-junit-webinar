@@ -14,6 +14,12 @@ jobs:
       - name: 'Check out repository'
         uses: actions/checkout@v2
 
+      - name: 'Set up JDK 17'
+        uses: sormuras/setup-jdk@main
+        with:
+          feature: 17
+          version: latest
+
       - name: 'Compile modular sources'
         shell: bash
         run: |
