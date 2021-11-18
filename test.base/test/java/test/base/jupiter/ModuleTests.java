@@ -1,6 +1,8 @@
 package test.base.jupiter;
 
-import org.junit.jupiter.api.Assertions;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -13,13 +15,13 @@ class ModuleTests {
   void moduleNameIsTestBase() {
     var expected = "test.base";
     var actual = getClass().getModule().getName();
-    Assertions.assertEquals(expected, actual);
+    assertEquals(expected, actual);
   }
 
   @ParameterizedTest
   @ValueSource(strings = {"test.base.demo", "test.base.jupiter"})
   void checkIfPackageNameIsPresent(String name) {
     var actual = getClass().getModule().getDescriptor().packages();
-    Assertions.assertTrue(actual.contains(name), actual.toString());
+    assertTrue(actual.contains(name), actual.toString());
   }
 }
