@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: 'Check out repository'
@@ -19,7 +19,7 @@ jobs:
         run: |
           javac \
             --module-path external-modules \
-            --module-source-path ./*/test/java \
+            --module-source-path "./*/test/java" \
             -d classes \
             --module test.base
             
@@ -31,4 +31,4 @@ jobs:
             --add-modules test.base \
             --module org.junit.platform.console \
               --select-module test.base \
-              --include-classname=.*
+              --include-classname=".*"

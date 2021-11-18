@@ -1,6 +1,7 @@
 /.idea/out/
 /.idea/shelf/
 /.idea/workspace.xml
+/classes/
 
 .jqwik-database
 JUnit 5 User Guide.html
