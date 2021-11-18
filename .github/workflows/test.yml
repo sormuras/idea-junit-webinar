@@ -1,0 +1,32 @@
+name: test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Check out repository'
+        uses: actions/checkout@v2
+
+      - name: 'Compile modular sources'
+        run: |
+          javac \
+            --module-path external-modules \
+            --module-source-path ./*/test/java \
+            -d classes \
+            --module test.base
+            
+      - name: 'Launch JUnit Platform'
+        run: |
+          java \
+            --module-path classes:external-modules \
+            --add-modules test.base \
+            --module org.junit.platform.console \
+              --select-module test.base \
+              --include-classname=.*
