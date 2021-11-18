@@ -8,11 +8,11 @@ public class Sleep implements BeforeTestExecutionCallback, AfterTestExecutionCal
 
   @Override
   public void beforeTestExecution(ExtensionContext extensionContext) throws Exception {
-    Thread.sleep(1000);
+    Thread.sleep(100);
   }
 
   @Override
   public void afterTestExecution(ExtensionContext extensionContext) throws Exception {
-    Thread.sleep(1000);
+    Thread.sleep(100);
   }
 }
