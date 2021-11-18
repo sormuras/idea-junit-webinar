@@ -5,4 +5,5 @@ open /*test*/ module test.base {
   // modules we're testing with...
   requires org.junit.jupiter;
   requires com.github.sormuras.mainrunner.engine;
+  requires org.assertj.core;
 }

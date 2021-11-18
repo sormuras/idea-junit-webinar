@@ -1,8 +1,10 @@
 package test.base.jupiter;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -23,5 +25,15 @@ class ModuleTests {
   void checkIfPackageNameIsPresent(String name) {
     var actual = getClass().getModule().getDescriptor().packages();
     assertTrue(actual.contains(name), actual.toString());
+  }
+
+  @Nested
+  class TestAssertJ {
+    @Test
+    void moduleNameIsTestBase() {
+      var expected = "test.base";
+      var actual = getClass().getModule().getName();
+      assertThat(actual).isEqualTo(expected);
+    }
   }
 }
