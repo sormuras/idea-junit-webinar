@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: 'Compile modular sources'
+        shell: bash
         run: |
           javac \
             --module-path external-modules \
@@ -23,6 +24,7 @@ jobs:
             --module test.base
             
       - name: 'Launch JUnit Platform'
+        shell: bash
         run: |
           java \
             --module-path classes:external-modules \
