@@ -1,6 +1,6 @@
 # IntelliJ IDEA and JUnit: Writing, Finding, and Running Tests
 
-- 📼 Webinar <https://info.jetbrains.com/info.jetbrains.com/idea-webinar-november17-2021>
+- 📼 Webinar <https://blog.jetbrains.com/idea/2021/11/live-stream-recording-intellij-idea-and-junit-writing-finding-and-running-tests/>
 - 📜 Sources <https://github.com/sormuras/idea-junit-webinar>
 - ▶ IDEA <https://www.jetbrains.com/idea>
 - ☕ Java 17 <https://oracle.com/javadownload>
